@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Type Customized</title>
+  <script src="/js/index.js" type="module"></script>
+</head>
+
+<body>
+
+  Only Number : <input type="customNumber" />
+  <br>
+  <br>
+  Plain Text : <input id="text" value="hello" type="text" />
+  <br>
+  <br>
+  Caps Words : <input id="capWords" type="customText" />
+  <br />
+  <br>
+  camelCase : <input id="camelCase" type="camelCase" />
+  <br />
+  <br>
+  camelCase (nospace) : <input id="noSpaceCamelCase" type="camelCase" nospace />
+  <br />
+  <br>
+  PascalCase : <input id="pascalCase" type="pascalCase" />
+  <br />
+  <br>
+  PascalCase (nospace) : <input id="noSpacePascalCase" type="pascalCase" nospace />
+  <br />
+  <br>
+  snake_case : <input id="snakeCase" type="snakeCase" />
+  <br />
+  <br>
+  snake_case (nospace) : <input id="noSpaceSnakeCase" type="snakeCase" nospace />
+  <br />
+  <br>
+  small words : <input id="lowerCase" type="lowerCase" />
+  <br />
+  <br>
+  ALL CAPS : <input id="upperCase" type="upperCase" />
+  <br />
+  <br>
+  Filtered Data : <span id="filteredValue"></span>
+
+  <script>
+
+    document.getElementById("text").removeAttribute("value");
+
+    document.addEventListener("readystatechange", (event) => {
+      if (document.readyState === "complete") {
+        const plainInput = document.getElementById("text");
+        const ids = ['capWords',
+          'camelCase',
+          'noSpaceCamelCase',
+          'pascalCase',
+          'noSpacePascalCase',
+          'snakeCase',
+          'noSpaceSnakeCase',
+          'lowerCase',
+          'upperCase'];
+        plainInput.addEventListener("input", function (e) {
+          for (const id of ids) {
+            document.getElementById(id).val = e.target.value;
+
+          }
+        }, { passive: true })
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>
