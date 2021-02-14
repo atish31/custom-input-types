@@ -40,6 +40,10 @@
   <br>
   ALL CAPS : <input id="upperCase" type="upperCase" />
   <br />
+  <hr/>
+  <br>
+  Pincode : <input id="pincode" type="pincode" />
+  <br />
   <br>
   Filtered Data : <span id="filteredValue"></span>
 
@@ -58,7 +62,8 @@
           'snakeCase',
           'noSpaceSnakeCase',
           'lowerCase',
-          'upperCase'];
+          'upperCase',
+          'pincode'];
         plainInput.addEventListener("input", function (e) {
           for (const id of ids) {
             document.getElementById(id).val = e.target.value;

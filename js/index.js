@@ -36,10 +36,21 @@ function updateValue(e) {
     case "snakeCase":
       snakeCase(e);
       break;
+    case "pincode":
+      pincode(e);
   }
 
   var log = document.getElementById("filteredValue");
   log.textContent = e.target.value;
+}
+
+function pincode(e) {
+  console.log("Pincode");
+  let value = e.target.value;
+  e.target.value = e.target.value.replaceAll(/^[1-9][0-9]{6}$/g, value.slice(0,6));
+  e.target.value = e.target.value.replace(/\D|^[0].*$/g,'');
+  
+
 }
 
 function customText(e) {
