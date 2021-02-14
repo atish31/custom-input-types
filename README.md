@@ -14,11 +14,16 @@ All the types are categorised into their parent group from which they are derive
 
 ### Text
 Type Customised allows a precise control over all your text inputs. Explore the types below and implement it in your own awesome project!
-- [upperCase](#upperCase)
-- [lowerCase](#lowerCase)
-- [pascalCase](#pascalCase)
-- [camelCase](#camelCase)
-- [snakeCase](#snakeCase)
+- [Type Customised](#type-customised)
+  - [Tech](#tech)
+  - [Custom Types](#custom-types)
+    - [Text](#text)
+      - [upperCase](#uppercase)
+      - [lowerCase](#lowercase)
+      - [pascalCase](#pascalcase)
+      - [camelCase](#camelcase)
+      - [snakeCase](#snakecase)
+      - [Pincode](#pincode)
 
 #### upperCase
 Converts the sentence to upper case.   
@@ -69,3 +74,7 @@ Alternatively, you can add `nospace` attribute to remove the spaces between word
 **Example**  
 Input Text: Type Customised is the simplest way to handle input tags  
 Result: type customised is the simplest way to handle input tags
+
+#### Pincode 
+Allows you to add only 6-digit Indian Postal Index Code (PIN Code).
+`<input type="pincode"/>`
