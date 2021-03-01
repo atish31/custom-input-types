@@ -41,7 +41,10 @@
   ALL CAPS : <input id="upperCase" type="upperCase" />
   <br />
   <br>
-  Filtered Data : <span id="filteredValue"></span>
+  Phone : <input id="tel" type="phone" country="IN" />
+  <br />
+  <br>
+  <!-- Filtered Data : <span id="filteredValue"></span> -->
 
   <script>
 
@@ -61,12 +64,16 @@
           'upperCase'];
         plainInput.addEventListener("input", function (e) {
           for (const id of ids) {
-            document.getElementById(id).val = e.target.value;
+            document.getElementById(id).value = e.target.value;
 
           }
         }, { passive: true })
       }
     });
+
+    setTimeout(() => {
+      document.getElementById("upperCase").value = "test value";
+    }, 2000)
 
   </script>
 
