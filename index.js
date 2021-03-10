@@ -8,6 +8,7 @@ import {
 
 import {customNumber, telephone} from '/modules/custom-numerics/custom-numerics.js';
 import {customText} from '/modules/custom-text/custom-text.js';
+import {convertSnakeCaseToCamelCase} from '/modules/_shared/helper.js'
 
 
 function init() {
@@ -29,7 +30,8 @@ function init() {
 }
 
 function updateValue(e) {
-  const type = e.target.getAttribute('type');
+  const type = convertSnakeCaseToCamelCase(e.target.getAttribute('type'));
+  console.log(type, '||| type');
   switch (type) {
     case 'customNumber':
       e.target.value = customNumber(e.target.value);

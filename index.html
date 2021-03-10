@@ -8,37 +8,37 @@
 
 <body>
 
-  Only Number : <input type="customNumber" />
+  Only Number : <input type="custom-number" />
   <br>
   <br>
   Plain Text : <input id="text" value="hello" type="text" />
   <br>
   <br>
-  Caps Words : <input id="capWords" type="customText" />
+  Caps Words : <input id="capWords" type="custom-text" />
   <br />
   <br>
-  camelCase : <input id="camelCase" type="camelCase" />
+  camelCase : <input id="camelCase" type="camel-case" />
   <br />
   <br>
-  camelCase (nospace) : <input id="noSpaceCamelCase" type="camelCase" nospace />
+  camelCase (nospace) : <input id="noSpaceCamelCase" type="camel-case" nospace />
   <br />
   <br>
-  PascalCase : <input id="pascalCase" type="pascalCase" />
+  PascalCase : <input id="pascalCase" type="pascal-case" />
   <br />
   <br>
-  PascalCase (nospace) : <input id="noSpacePascalCase" type="pascalCase" nospace />
+  PascalCase (nospace) : <input id="noSpacePascalCase" type="pascal-case" nospace />
   <br />
   <br>
-  snake_case : <input id="snakeCase" type="snakeCase" />
+  snake_case : <input id="snakeCase" type="snake-case" />
   <br />
   <br>
-  snake_case (nospace) : <input id="noSpaceSnakeCase" type="snakeCase" nospace />
+  snake_case (nospace) : <input id="noSpaceSnakeCase" type="snake-case" nospace />
   <br />
   <br>
-  small words : <input id="lowerCase" type="lowerCase" />
+  small words : <input id="lowerCase" type="lower-case" />
   <br />
   <br>
-  ALL CAPS : <input id="upperCase" type="upperCase" />
+  ALL CAPS : <input id="upperCase" type="upper-case" />
   <br />
   <br>
   Phone : <input id="tel" type="phone" country="IN" />
@@ -49,7 +49,6 @@
   <script>
 
     document.getElementById("text").removeAttribute("value");
-
     document.addEventListener("readystatechange", (event) => {
       if (document.readyState === "complete") {
         const plainInput = document.getElementById("text");
@@ -76,7 +75,5 @@
     }, 2000)
 
   </script>
-
 </body>
-
 </html>
