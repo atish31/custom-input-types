@@ -16,6 +16,7 @@ describe('Unit Testing for #convertSnakeCaseToCamelCase()', () => {
 
     let testData = _convertSnakeCaseToCamelCase('camelCase');
     expect(testData).to.be.equal(testData);
+    expect(testData).to.not.equal('camel_case');
 
   });
 
