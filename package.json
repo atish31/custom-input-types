@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "mocha -r esm './specs/*spec.js'"
+    "test": "mocha -r esm './specs/**/*spec.js'"
   },
   "devDependencies": {
     "chai": "^4.3.3",
