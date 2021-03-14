@@ -1,10 +1,12 @@
 {
   "scripts": {
-    "test": "mocha -r esm './specs/**/*spec.js'"
+    "test": "mocha -r esm './specs/**/*spec.js'",
+    "coverage" : "nyc npm test"
   },
   "devDependencies": {
     "chai": "^4.3.3",
     "esm": "^3.2.25",
-    "mocha": "^8.3.1"
+    "mocha": "^8.3.1",
+    "nyc": "^15.1.0"
   }
 }
