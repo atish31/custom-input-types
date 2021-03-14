@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "mocha -r esm './specs/**/*spec.js'",
-    "coverage" : "nyc npm test"
+    "coverage" : "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test"
   },
   "devDependencies": {
     "chai": "^4.3.3",
