@@ -4,11 +4,11 @@ import {
   camelCase,
   pascalCase,
   snakeCase
-} from '/modules/custom-case/custom-case.js';
+} from '/src/modules/custom-case/custom-case.js';
 
-import {customNumber, telephone} from '/modules/custom-numerics/custom-numerics.js';
-import {customText} from '/modules/custom-text/custom-text.js';
-import {convertSnakeCaseToCamelCase} from '/modules/_shared/helper.js'
+import {customNumber, telephone} from '/src/modules/custom-numerics/custom-numerics.js';
+import {customText} from '/src/modules/custom-text/custom-text.js';
+import {convertSnakeCaseToCamelCase} from '/src/modules/_shared/helper.js'
 
 
 function init() {
@@ -31,7 +31,6 @@ function init() {
 
 function updateValue(e) {
   const type = convertSnakeCaseToCamelCase(e.target.getAttribute('type'));
-  console.log(type, '||| type');
   switch (type) {
     case 'customNumber':
       e.target.value = customNumber(e.target.value);
@@ -139,3 +138,30 @@ document.addEventListener('readystatechange', (event) => {
     })();
   }
 })(document.firstElementChild, Object, window);
+
+
+document.getElementById("text").removeAttribute("value");
+document.addEventListener("readystatechange", () => {
+  if (document.readyState === "complete") {
+    const plainInput = document.getElementById("text");
+    const ids = ['capWords',
+      'camelCase',
+      'noSpaceCamelCase',
+      'pascalCase',
+      'noSpacePascalCase',
+      'snakeCase',
+      'noSpaceSnakeCase',
+      'lowerCase',
+      'upperCase'];
+    plainInput.addEventListener("input", function (e) {
+      for (const id of ids) {
+        document.getElementById(id).value = e.target.value;
+
+      }
+    }, { passive: true })
+  }
+});
+
+setTimeout(() => {
+  document.getElementById("upperCase").value = "test value";
+}, 2000)

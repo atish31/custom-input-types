@@ -1,4 +1,4 @@
-let customCase = require('../modules/custom-case/custom-case.js');
+let customCase = require('../src/modules/custom-case/custom-case.js');
 let expect = require('chai').expect;
 
 describe('Customize the string case', function () {
