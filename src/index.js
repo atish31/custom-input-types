@@ -14,7 +14,6 @@ import {convertSnakeCaseToCamelCase} from '/src/modules/_shared/helper.js'
 function init() {
   let inputs = document.querySelectorAll('input');
   for (const input of inputs) {
-    input.value = 'Hello how are you 123';
     input.addEventListener('input', updateValue, {passive: true});
     initFireEvent(input);
   }

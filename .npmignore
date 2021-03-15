@@ -6,3 +6,5 @@ demo
 .editorconfig
 webpack.config.js
 index.html
+.babelrc
+
