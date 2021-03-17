@@ -1,12 +1,34 @@
 {
-  "scripts": {
-    "test": "mocha -r esm './specs/**/*spec.js'",
-    "coverage" : "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test"
-  },
+  "name": "custom-input-types",
+  "description": "Type customised is a library that would help you get more control over the `input` types in your HTML or JSX files.",
+  "version": "1.0.2",
+  "main": "dist/bundle.js",
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
     "chai": "^4.3.3",
     "esm": "^3.2.25",
     "mocha": "^8.3.1",
-    "nyc": "^15.1.0"
-  }
+    "nyc": "^15.1.0",
+    "webpack": "^5.25.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "test": "mocha -r esm './specs/**/*spec.js'",
+    "local": "php -S localhost:3000",
+    "build": "webpack",
+    "coverage": "nyc --reporter=lcov --reporter=html --reporter=text-summary npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atish31/type-customised.git"
+  },
+  "author": "Atish Raina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atish31/type-customised/issues"
+  },
+  "homepage": "https://github.com/atish31/type-customised#readme"
 }

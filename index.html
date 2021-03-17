@@ -3,77 +3,46 @@
 
 <head>
   <title>Type Customized</title>
-  <script src="index.js" type="module"></script>
+  <script src="dist/bundle.js" type="module"></script>
 </head>
 
 <body>
 
-  Only Number : <input type="custom-number" />
-  <br>
-  <br>
-  Plain Text : <input id="text" value="hello" type="text" />
-  <br>
-  <br>
-  Caps Words : <input id="capWords" type="custom-text" />
-  <br />
-  <br>
-  camelCase : <input id="camelCase" type="camel-case" />
-  <br />
-  <br>
-  camelCase (nospace) : <input id="noSpaceCamelCase" type="camel-case" nospace />
-  <br />
-  <br>
-  PascalCase : <input id="pascalCase" type="pascal-case" />
-  <br />
-  <br>
-  PascalCase (nospace) : <input id="noSpacePascalCase" type="pascal-case" nospace />
-  <br />
-  <br>
-  snake_case : <input id="snakeCase" type="snake-case" />
-  <br />
-  <br>
-  snake_case (nospace) : <input id="noSpaceSnakeCase" type="snake-case" nospace />
-  <br />
-  <br>
-  small words : <input id="lowerCase" type="lower-case" />
-  <br />
-  <br>
-  ALL CAPS : <input id="upperCase" type="upper-case" />
-  <br />
-  <br>
-  Phone : <input id="tel" type="phone" country="IN" />
-  <br />
-  <br>
-  <!-- Filtered Data : <span id="filteredValue"></span> -->
-
-  <script>
-
-    document.getElementById("text").removeAttribute("value");
-    document.addEventListener("readystatechange", (event) => {
-      if (document.readyState === "complete") {
-        const plainInput = document.getElementById("text");
-        const ids = ['capWords',
-          'camelCase',
-          'noSpaceCamelCase',
-          'pascalCase',
-          'noSpacePascalCase',
-          'snakeCase',
-          'noSpaceSnakeCase',
-          'lowerCase',
-          'upperCase'];
-        plainInput.addEventListener("input", function (e) {
-          for (const id of ids) {
-            document.getElementById(id).value = e.target.value;
-
-          }
-        }, { passive: true })
-      }
-    });
-
-    setTimeout(() => {
-      document.getElementById("upperCase").value = "test value";
-    }, 2000)
-
-  </script>
+Only Number : <input type="custom-number" />
+<br>
+<br>
+Plain Text : <input id="text" type="text" value="hello" />
+<br>
+<br>
+Caps Words : <input id="capWords" type="custom-text" />
+<br />
+<br>
+camelCase : <input id="camelCase" type="camel-case" />
+<br />
+<br>
+camelCase (nospace) : <input id="noSpaceCamelCase" nospace type="camel-case" />
+<br />
+<br>
+PascalCase : <input id="pascalCase" type="pascal-case" />
+<br />
+<br>
+PascalCase (nospace) : <input id="noSpacePascalCase" nospace type="pascal-case" />
+<br />
+<br>
+snake_case : <input id="snakeCase" type="snake-case" />
+<br />
+<br>
+snake_case (nospace) : <input id="noSpaceSnakeCase" nospace type="snake-case" />
+<br />
+<br>
+small words : <input id="lowerCase" type="lower-case" />
+<br />
+<br>
+ALL CAPS : <input id="upperCase" type="upper-case" />
+<br />
+<br>
+Phone : <input country="IN" id="tel" type="phone" />
+<br />
+<br>
 </body>
 </html>

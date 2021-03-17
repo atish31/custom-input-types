@@ -1,4 +1,4 @@
-let customCase = require('../modules/custom-case/custom-case.js');
+let customCase = require('../src/modules/custom-case/custom-case.js');
 let expect = require('chai').expect;
 
 const inputString = 'Type Customised is the simplest way to handle input tags';
