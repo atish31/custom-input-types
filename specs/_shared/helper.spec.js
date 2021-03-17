@@ -1,4 +1,4 @@
-import { convertSnakeCaseToCamelCase as _convertSnakeCaseToCamelCase } from '../../modules/_shared/helper';
+import { convertSnakeCaseToCamelCase as _convertSnakeCaseToCamelCase } from '../../src/modules/_shared/helper';
 import { expect } from 'chai';
 
 

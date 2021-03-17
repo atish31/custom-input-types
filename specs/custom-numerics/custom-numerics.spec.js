@@ -1,4 +1,4 @@
-import { customNumber as _customNumber, telephone as _telephone } from '../../modules/custom-numerics/custom-numerics';
+import { customNumber as _customNumber, telephone as _telephone } from '../../src/modules/custom-numerics/custom-numerics';
 import { expect } from 'chai';
 
 
