@@ -1,71 +1,71 @@
-# Type Customised
+# custom-input-types
 
-Type customised is a library that would help you get more control over the `input` types in your HTML or JSX files.
+## Download
+custom-input-types is released under the [MIT license] & supports modern environments.
 
-## Tech
 
-Type Customised used vanilla JS to work and gets attached to the DOM efficiently.
+## Installation
 
-And of course Tech Customised itself is open source with a public repository on GitHub.
+In a browser:
+```html
+<script src="lodash.js"></script>
+```
 
-## Custom Types
-Type Customised provides a lot of custom `type` for all your `input` tags. 
-All the types are categorised into their parent group from which they are derived.
+Using npm:
+```shell
+$ npm i -g npm
+$ npm i custom-input-types
+```
 
-### Text
-Type Customised allows a precise control over all your text inputs. Explore the types below and implement it in your own awesome project!
-- [upperCase](#upperCase)
-- [lowerCase](#lowerCase)
-- [pascalCase](#pascalCase)
-- [camelCase](#camelCase)
-- [snakeCase](#snakeCase)
+## Why custom-input-types?
 
-#### upperCase
-Converts the sentence to upper case.   
-`<input type="upperCase">`   
-**Example**
-Input Text: Type Customised is the simplest way to handle input tags
-Result: TYPE CUSTOMISED IS THE SIMPLEST WAY TO HANDLE INPUT TAGS
-#### lowerCase
-Converts sentence to lower case.   
-`<input type="lowerCase">`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
-#### pascalCase
-Converts all the words to pascal case (First letter in upper case of every word).   
-`<input type="pascalCase">`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
+Custom input types lets you use customised input types without writing any javascript for yourself,<br>
+Available custom input types as of now
 
-Alternatively, you can add `nospace` attribute to remove the spaces between word and make it a real `PascalCase` format.  
-`<input type="lowerCase" nospace>`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
-#### camelCase
-Converts all the words to camel case (First letter in lower case of first word and upper case of every other word).   
-`<input type="camelCase">`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
+ * Only numbers:
+      ```
+         <input type="custom-number" />
+     ```
+ * Capitalized Text:
+    ```
+       <input id="capWords" type="custom-text" />
+   ```
+ * Camel Case Text with space:
+      ```
+         <input id="camelCase" type="camel-case" />
+     ```
 
-Alternatively, you can add `nospace` attribute to remove the spaces between word and make it a real `camelCase` format.  
-`<input type="camelCase" nospace>`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
+ * Camel Case Text with no space:
+      ```
+         <input id="noSpaceCamelCase" nospace type="camel-case" />
+     ```
+ * Pascal Case Text with space:
+     ```
+        <input id="pascalCase" type="pascal-case" />
+    ```
 
-#### snakeCase
-Converts all the words to snake case (all words in lower case).   
-`<input type="snakeCase">`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
+ * Pascal Case Text with no space:
+    ```
+             <input id="noSpacePascalCase" nospace type="pascal-case" />
 
-Alternatively, you can add `nospace` attribute to remove the spaces between word and make it a real `snake_case` format.  
-`<input type="lowerCase" nospace>`  
-**Example**  
-Input Text: Type Customised is the simplest way to handle input tags  
-Result: type customised is the simplest way to handle input tags
+   ```
+ * Snake Case:
+      ```
+         <input id="snakeCase" type="snake-case" />
+     ```
+ * All lower case:
+      ```
+         <input type="custom-number" />
+     ```
+ * All Upper Case:
+      ```
+         <input type="custom-number" />
+     ```
+ * Phone:
+      ```
+         <input type="custom-number" />
+     ```
+
+
+
+
