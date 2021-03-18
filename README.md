@@ -64,7 +64,15 @@ Available custom input types as of now
       ```
      <input type="phone" />
      ```
-
-
-
-
+ * Pincode(Default):
+    ```
+    <input type="pincode" />
+    ```
+ * Pincode(Alphanumeric attribute):
+   ```
+   <input id="pincode" type="pincode" alphanum />
+   ```
+ * Pincode(max-character):
+    ```
+   <input id="pincode" type="pincode" max=8 />
+   ```
