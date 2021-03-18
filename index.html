@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Type Customized</title>
-  <script src="https://unpkg.com/custom-input-types@1.0.6/custom-input.min.js" type="module"></script>
-</head>
-
-<body>
-
-Only Number : <input type="custom-number" />
-<br>
-<br>
-Plain Text : <input id="text" type="text" value="hello" />
-<br>
-<br>
-Caps Words : <input id="capWords" type="custom-text" />
-<br />
-<br>
-camelCase : <input id="camelCase" type="camel-case" />
-<br />
-<br>
-camelCase (nospace) : <input id="noSpaceCamelCase" nospace type="camel-case" />
-<br />
-<br>
-PascalCase : <input id="pascalCase" type="pascal-case" />
-<br />
-<br>
-PascalCase (nospace) : <input id="noSpacePascalCase" nospace type="pascal-case" />
-<br />
-<br>
-snake_case : <input id="snakeCase" type="snake-case" />
-<br />
-<br>
-snake_case (nospace) : <input id="noSpaceSnakeCase" nospace type="snake-case" />
-<br />
-<br>
-small words : <input id="lowerCase" type="lower-case" />
-<br />
-<br>
-ALL CAPS : <input id="upperCase" type="upper-case" />
-<br />
-<br>
-Phone : <input country="IN" id="tel" type="phone" />
-<br />
-<br>
-</body>
+  <head>
+    <title>Type Customized</title>
+    <script src="https://unpkg.com/custom-input-types@1.0.6/custom-input.min.js" type="module"></script>
+  </head>
+  <body>
+    Only Number : <input type="custom-number" />
+    <br />
+    <br />
+    Plain Text : <input id="text" type="text" value="hello" />
+    <br />
+    <br />
+    Caps Words : <input id="capWords" type="custom-text" />
+    <br />
+    <br />
+    camelCase : <input id="camelCase" type="camel-case" />
+    <br />
+    <br />
+    camelCase (nospace) :
+    <input id="noSpaceCamelCase" nospace type="camel-case" />
+    <br />
+    <br />
+    PascalCase : <input id="pascalCase" type="pascal-case" />
+    <br />
+    <br />
+    PascalCase (nospace) :
+    <input id="noSpacePascalCase" nospace type="pascal-case" />
+    <br />
+    <br />
+    snake_case : <input id="snakeCase" type="snake-case" />
+    <br />
+    <br />
+    snake_case (nospace) :
+    <input id="noSpaceSnakeCase" nospace type="snake-case" />
+    <br />
+    <br />
+    small words : <input id="lowerCase" type="lower-case" />
+    <br />
+    <br />
+    ALL CAPS : <input id="upperCase" type="upper-case" />
+    <br />
+    <br />
+    Phone : <input country="IN" id="tel" type="phone" />
+    <br />
+    <br />
+    Pincode : <input id="pincode" type="pincode" />
+    <br />
+    <br />
+    Pincode (Alphanumeric) : <input id="pincode" type="pincode" alphanum />
+    <br />
+    <br />
+    Pincode (Alphanumeric + Allowing Maximum Length=8) : <input id="pincode" type="pincode" alphanum max="8" />
+    <br />
+    <br />
+  </body>
 </html>

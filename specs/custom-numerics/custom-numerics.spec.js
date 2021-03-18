@@ -1,4 +1,4 @@
-import { customNumber as _customNumber, telephone as _telephone } from '../../src/modules/custom-numerics/custom-numerics';
+import { customNumber as _customNumber, telephone as _telephone, pincode as _pincode } from '../../src/modules/custom-numerics/custom-numerics';
 import { expect } from 'chai';
 
 
@@ -32,7 +32,6 @@ describe('Unit Testing for #telephone()', () => {
       }
     };
     let testData = _telephone(e);
-    console.log(testData);
 
   });
 
