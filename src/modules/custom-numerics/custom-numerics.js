@@ -13,7 +13,11 @@ export function telephone(e) {
 
 export function pincode(e) {
 
+  let defaultLength = e.target.max || 6
+  let pincodeRegex = '^[1-9][0-9]{'+defaultLength+'}$';
+  pincodeRegex = new RegExp(pincodeRegex, 'g');
   let value = e.target.value;
-  e.target.value = e.target.value.replaceAll(/^[1-9][0-9]{6}$/g, value.slice(0,6));
+
+  e.target.value = e.target.value.replaceAll(pincodeRegex, value.slice(0,defaultLength));
   e.target.value = e.target.value.replace(/\D|^[0].*$/g,'');
 }
