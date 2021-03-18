@@ -24,46 +24,45 @@ Available custom input types as of now
 
  * Only numbers:
       ```
-         <input type="custom-number" />
+     <input type="custom-number" />
      ```
  * Capitalized Text:
     ```
-       <input id="capWords" type="custom-text" />
+    <input id="capWords" type="custom-text" />
    ```
  * Camel Case Text with space:
       ```
-         <input id="camelCase" type="camel-case" />
+    <input id="camelCase" type="camel-case" />
      ```
 
  * Camel Case Text with no space:
       ```
-         <input id="noSpaceCamelCase" nospace type="camel-case" />
+    <input id="noSpaceCamelCase" nospace type="camel-case" />
      ```
  * Pascal Case Text with space:
      ```
-        <input id="pascalCase" type="pascal-case" />
+    <input id="pascalCase" type="pascal-case" />
     ```
 
  * Pascal Case Text with no space:
     ```
-             <input id="noSpacePascalCase" nospace type="pascal-case" />
-
+    <input id="noSpacePascalCase" nospace type="pascal-case" />
    ```
  * Snake Case:
       ```
-         <input id="snakeCase" type="snake-case" />
+    <input id="snakeCase" type="snake-case" />
      ```
  * All lower case:
       ```
-         <input type="custom-number" />
+    <input type="lowerCase" />
      ```
  * All Upper Case:
       ```
-         <input type="custom-number" />
+    <input type="upperCase" />
      ```
  * Phone:
       ```
-         <input type="custom-number" />
+     <input type="phone" />
      ```
 
 
