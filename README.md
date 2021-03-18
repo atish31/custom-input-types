@@ -11,6 +11,12 @@ In a browser:
 <script src="custom-input.min.js"></script>
 ```
 
+or use CDN:
+
+```html
+<script src="https://unpkg.com/custom-input-types@1.0.7/custom-input.min.js" type="module"></script>
+```
+
 Using npm:
 ```shell
 $ npm i -g npm
