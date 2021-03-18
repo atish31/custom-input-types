@@ -10,3 +10,10 @@ export function telephone(e) {
     e.target.value = "(" + match[1] + ") " + match[2] + "-" + match[3];
   }
 }
+
+export function pincode(e) {
+
+  let value = e.target.value;
+  e.target.value = e.target.value.replaceAll(/^[1-9][0-9]{6}$/g, value.slice(0,6));
+  e.target.value = e.target.value.replace(/\D|^[0].*$/g,'');
+}

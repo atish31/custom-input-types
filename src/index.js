@@ -6,9 +6,9 @@ import {
   snakeCase
 } from '/src/modules/custom-case/custom-case.js';
 
-import {customNumber, telephone} from '/src/modules/custom-numerics/custom-numerics.js';
-import {customText} from '/src/modules/custom-text/custom-text.js';
-import {convertSnakeCaseToCamelCase} from '/src/modules/_shared/helper.js'
+import { customNumber, telephone, pincode } from '/src/modules/custom-numerics/custom-numerics.js';
+import { customText } from '/src/modules/custom-text/custom-text.js';
+import { convertSnakeCaseToCamelCase } from '/src/modules/_shared/helper.js'
 
 
 function init() {
@@ -54,6 +54,9 @@ function updateValue(e) {
       break;
     case 'phone':
       telephone(e);
+      break;
+    case 'pincode':
+      pincode(e);
       break;
   }
 }
