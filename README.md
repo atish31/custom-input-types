@@ -14,7 +14,7 @@ In a browser:
 or use CDN:
 
 ```html
-<script src="https://unpkg.com/custom-input-types@1.0.9/custom-input.min.js" type="module"></script>
+<script src="https://unpkg.com/custom-input-types@1.0.10/custom-input.min.js"></script>
 ```
 
 Using npm:
