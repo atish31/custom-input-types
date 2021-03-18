@@ -24,14 +24,28 @@ describe('Unit Testing for #customNumber()', () => {
 
 describe('Unit Testing for #telephone()', () => {
 
-  it('Given a number string as input, should return the number as it is', () => {
+  it('Given a valid Indian number string as input, should return the number as it is', () => {
 
     let e = {
       target: {
         value: "9876543210"
       }
     };
-    let testData = _telephone(e);
+    _telephone(e);
+    expect(e.target.value).to.be.equal("9876543210");
+    expect(e.target.value).to.be.not.equal("");
+  });
+
+  it('Given an invalid Indian number string as input, should return empty string', () => {
+
+    let e = {
+      target: {
+        value: "4876543210"
+      }
+    };
+    _telephone(e);
+    expect(e.target.value).to.be.equal("");
+    expect(e.target.value).to.be.not.equal("4876543210");
 
   });
 
