@@ -13,11 +13,17 @@ export function telephone(e) {
 
 export function pincode(e) {
 
-  let defaultLength = e.target.max || 6
-  let pincodeRegex = '^[1-9][0-9]{'+defaultLength+'}$';
-  pincodeRegex = new RegExp(pincodeRegex, 'g');
+  let defaultLength = e.target.max || 6;
   let value = e.target.value;
 
-  e.target.value = e.target.value.replaceAll(pincodeRegex, value.slice(0,defaultLength));
-  e.target.value = e.target.value.replace(/\D|^[0].*$/g,'');
+  if(e.target.hasAttribute("alphanum")){
+    e.target.value = e.target.value.replace(/[\W_]/g, '');
+    e.target.value = e.target.value.length > defaultLength  ? value.slice(0,defaultLength) : e.target.value;
+  }
+  else{
+    let pincodeRegex = '^[1-9][0-9]{'+defaultLength+'}$';
+    pincodeRegex = new RegExp(pincodeRegex, 'g');
+    e.target.value = e.target.value.replaceAll(pincodeRegex, value.slice(0,defaultLength));
+    e.target.value = e.target.value.replace(/\D|^[0].*$/g,'');
+  }
 }
