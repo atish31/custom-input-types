@@ -137,30 +137,3 @@ document.addEventListener('readystatechange', (event) => {
     })();
   }
 })(document.firstElementChild, Object, window);
-
-
-document.getElementById("text").removeAttribute("value");
-document.addEventListener("readystatechange", () => {
-  if (document.readyState === "complete") {
-    const plainInput = document.getElementById("text");
-    const ids = ['capWords',
-      'camelCase',
-      'noSpaceCamelCase',
-      'pascalCase',
-      'noSpacePascalCase',
-      'snakeCase',
-      'noSpaceSnakeCase',
-      'lowerCase',
-      'upperCase'];
-    plainInput.addEventListener("input", function (e) {
-      for (const id of ids) {
-        document.getElementById(id).value = e.target.value;
-
-      }
-    }, { passive: true })
-  }
-});
-
-setTimeout(() => {
-  document.getElementById("upperCase").value = "test value";
-}, 2000)
