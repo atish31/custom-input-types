@@ -1,7 +1,7 @@
 {
   "name": "custom-input-types",
   "description": "Type customised is a library that would help you get more control over the `input` types in your HTML or JSX files.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/bundle.js",
   "dependencies": {},
   "devDependencies": {

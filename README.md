@@ -8,7 +8,7 @@ custom-input-types is released under the [MIT license] & supports modern environ
 
 In a browser:
 ```html
-<script src="lodash.js"></script>
+<script src="custom-input.min.js"></script>
 ```
 
 Using npm:
