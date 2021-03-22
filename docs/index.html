@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>custom-input-types</title>
+    <link rel="shortcut icon" type="image/png" href="assets/npm-logo.png"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+   
+    <script src="../custom-input.min.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+      <div class="logo">
+          <a href="#">
+              <a href="#">
+                <img src="assets/npm-logo.png" alt="Npm Package" class="logo">
+          </a>
+      </div>
+      <nav>
+          <ul>
+              <li>
+                  <a href="#Introduction">
+                      <i class="fas fa-sign-in-alt"></i>
+                      <p>Introduction</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Installation">
+                      <i class="fas fa-laptop-code"></i>
+                      <p>Installation</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Why_custom-input-types_?">
+                      <i class="fas fa-question-circle"></i>
+                      <p>Why custom-input-types?</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Collaborators">
+                      <i class="fas fa-user"></i>
+                      <p>Collaborators & Contributors</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Contact">
+                      <i class="fas fa-file-code"></i>
+                      <p>Contact us / Raise Issues</p>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+
+  <div id="main-doc" class="main">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+        <p><b>custom-input-types</b> is released under the [MIT license] & supports modern environments.</p>
+        <p>Type Customised allows a precise control over all your text inputs. Explore the types below and implement it in your own awesome project!</p>
+    </section>
+
+    <section id="Installation" class="main-section">
+      <header>Installation</header>
+      <ul>
+        <li>In a browser:</li>
+        <code>&lt;script src="custom-input.min.js"> &lt;/script&gt;</code>
+        <li>or use a CDN:</li>
+        <code>&lt;script src="https://unpkg.com/custom-input-types@latest/custom-input.min.js"&gt; &lt;/script&gt;</code>
+        <li>Using NPM (as node_modules)</li>
+        <code>$ npm i -g npm </code><br>
+        <code>$ npm i custom-input-types</code>
+      </ul>
+    </section>
+
+
+    <section id="Why_custom-input-types_?" class="main-section">
+      <header>Why custom-input-types?</header>
+        <p> <b>custom-input-types</b> lets you use customised input types without writing any javascript for yourself.</p>
+        <p> <b>custom-input-types</b> provides a lot of custom type for all your input tags. All the types are categorised into their parent group from which they are derived.</p>
+        <p>Available custom input types as of now</p>
+      <ul>
+        <li>Only numbers</li>
+        <code> &lt;input type="custom-number" /&gt; </code>
+        <input type="custom-number"/>
+
+        <li>Capitalized Text</li>
+        <code> &lt;input type="custom-text" /&gt; </code>
+
+        <li>Camel Case Text with space</li>
+        <code> &lt;input id="camelCase" type="camel-case" /&gt; </code>
+
+        <li>Camel Case Text with no space</li>
+        <code> &lt;input id="noSpaceCamelCase" nospace type="camel-case" /&gt; </code>
+
+        <li>Pascal Case Text with space</li>
+        <code> &lt;input id="pascalCase" type="pascal-case" /&gt; </code>
+
+        <li>Pascal Case Text with no space</li>
+        <code> &lt;input id="noSpacePascalCase" nospace type="pascal-case" /&gt; </code>
+
+        <li>Snake Case </li>
+        <code> &lt;input id="snakeCase" type="snake-case" /&gt; </code>
+
+        <li>All Lower Case</li>
+        <code> &lt;input type="lowerCase" /&gt; </code>
+
+        <li>All Upper Case</li>
+        <code> &lt;input type="upperCase" /&gt; </code>
+
+        <li>Phone</li>
+        <code> &lt;input type="phone" /&gt; </code>
+
+        <li>Pincode(Default)</li>
+        <code> &lt;input type="pincode" /&gt;</code>
+
+        <li>Pincode(Alphanumeric attribute)</li>
+        <code> &lt;input id="pincode" type="pincode" alphanum /&gt; </code>
+
+        <li>Pincode(max-character)</li>
+        <code> &lt;input id="pincode" type="pincode" max=8 /&gt; </code>
+
+      </ul>
+    </section>
+
+    <section id="Collaborators" class="main-section">
+      <header>Collaborators & Contributors</header>
+        <ul>
+          <li>Atish Raina (Lead)</li>
+          <li>Shubhankar Kotnala (Collaborator)</li>
+          <li>Shravan Kumar B (Collaborator)</li>
+        </ul>
+    </section>
+
+    <section id="Contact" class="main-section">
+      <header>Contact us/Raise Issues</header>
+
+      <form action="https://formspree.io/f/xbjqrlld" method="POST" style="margin: 0px 0px 0px 80px;">
+        <label>Your email:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="_replyto">
+        </br>
+        <label>Your message/issue:</label>
+          <textarea cols="30" rows="4" name="message"></textarea>
+        </br>
+        <button class="submit-form" type="submit">Send</button>
+      </form>
+
+    </section>
+  </div>
+
+</body>
+</html>
+
+
