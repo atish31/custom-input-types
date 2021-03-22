@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>custom-input-types</title>
     <link rel="shortcut icon" type="image/png" href="assets/npm-logo.png"/>
     <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+   
+    <script src="../custom-input.min.js"></script>
 </head>
 <body>
 
-  <nav id="navbar">
-    <header><h1>custom-input-types</h1></header>
-      <ul>
-        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#Installation">Installation</a></li>
-        <li><a class="nav-link" href="#Why_custom-input-types_?">Why custom-input-types?</a></li>
-        <li><a class="nav-link" href="#Collaborators">Collaborators & Contributors</a></li>
-        <li><a class="nav-link" href="#Contact">Contact us / Raise Issues </a></li>
-      </ul>
-    </nav>
+    <div class="sidebar">
+      <div class="logo">
+          <a href="#">
+              <a href="#">
+                <img src="assets/npm-logo.png" alt="Npm Package" class="logo">
+          </a>
+      </div>
+      <nav>
+          <ul>
+              <li>
+                  <a href="#Introduction">
+                      <i class="fas fa-sign-in-alt"></i>
+                      <p>Introduction</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Installation">
+                      <i class="fas fa-laptop-code"></i>
+                      <p>Installation</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Why_custom-input-types_?">
+                      <i class="fas fa-question-circle"></i>
+                      <p>Why custom-input-types?</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Collaborators">
+                      <i class="fas fa-user"></i>
+                      <p>Collaborators & Contributors</p>
+                  </a>
+              </li>
+              <li>
+                  <a href="#Contact">
+                      <i class="fas fa-file-code"></i>
+                      <p>Contact us / Raise Issues</p>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
 
   <div id="main-doc" class="main">
     <section id="Introduction" class="main-section">
@@ -29,9 +67,9 @@
       <header>Installation</header>
       <ul>
         <li>In a browser:</li>
-        <code>< script src="custom-input.min.js"> </ script ></code>
+        <code>&lt;script src="custom-input.min.js"> &lt;/script&gt;</code>
         <li>or use a CDN:</li>
-        <code>< script src="https://unpkg.com/custom-input-types@latest/custom-input.min.js" > </ script></code>
+        <code>&lt;script src="https://unpkg.com/custom-input-types@latest/custom-input.min.js"&gt; &lt;/script&gt;</code>
         <li>Using NPM (as node_modules)</li>
         <code>$ npm i -g npm </code><br>
         <code>$ npm i custom-input-types</code>
@@ -46,43 +84,44 @@
         <p>Available custom input types as of now</p>
       <ul>
         <li>Only numbers</li>
-        <code> < input type="custom-number" /> </code>
+        <code> &lt;input type="custom-number" /&gt; </code>
+        <input type="custom-number"/>
 
         <li>Capitalized Text</li>
-        <code> < input type="custom-text" /> </code>
+        <code> &lt;input type="custom-text" /&gt; </code>
 
         <li>Camel Case Text with space</li>
-        <code> < input id="camelCase" type="camel-case" /> </code>
+        <code> &lt;input id="camelCase" type="camel-case" /&gt; </code>
 
         <li>Camel Case Text with no space</li>
-        <code> < input id="noSpaceCamelCase" nospace type="camel-case" /> </code>
+        <code> &lt;input id="noSpaceCamelCase" nospace type="camel-case" /&gt; </code>
 
         <li>Pascal Case Text with space</li>
-        <code> < input id="pascalCase" type="pascal-case" /> </code>
+        <code> &lt;input id="pascalCase" type="pascal-case" /&gt; </code>
 
         <li>Pascal Case Text with no space</li>
-        <code> < input id="noSpacePascalCase" nospace type="pascal-case" /> </code>
+        <code> &lt;input id="noSpacePascalCase" nospace type="pascal-case" /&gt; </code>
 
         <li>Snake Case </li>
-        <code> < input id="snakeCase" type="snake-case" /> </code>
+        <code> &lt;input id="snakeCase" type="snake-case" /&gt; </code>
 
         <li>All Lower Case</li>
-        <code> < input type="lowerCase" /> </code>
+        <code> &lt;input type="lowerCase" /&gt; </code>
 
         <li>All Upper Case</li>
-        <code> < input type="upperCase" /> </code>
+        <code> &lt;input type="upperCase" /&gt; </code>
 
         <li>Phone</li>
-        <code> < input type="phone" /> </code>
+        <code> &lt;input type="phone" /&gt; </code>
 
         <li>Pincode(Default)</li>
-        <code> < input type="pincode" /></code>
+        <code> &lt;input type="pincode" /&gt;</code>
 
         <li>Pincode(Alphanumeric attribute)</li>
-        <code> < input id="pincode" type="pincode" alphanum /> </code>
+        <code> &lt;input id="pincode" type="pincode" alphanum /&gt; </code>
 
         <li>Pincode(max-character)</li>
-        <code> < input id="pincode" type="pincode" max=8 /> </code>
+        <code> &lt;input id="pincode" type="pincode" max=8 /&gt; </code>
 
       </ul>
     </section>
