@@ -3,6 +3,7 @@ node_modules
 src
 specs
 demo
+docs
 .editorconfig
 webpack.config.js
 index.html
